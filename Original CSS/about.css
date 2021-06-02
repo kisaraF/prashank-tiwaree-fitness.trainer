@@ -1,0 +1,102 @@
+/*About Main*/
+#about-img{
+	width: 100%;
+}
+
+.aboutMe{
+	display: flex;
+	gap:2.5em;
+	padding: 2em;
+}
+
+.quote{
+	padding: 3em;
+	background-color: #000;
+	color: #fff;
+}
+
+.quote-main{
+	font-size: 2rem;
+	color: #c2a43b;
+	margin-bottom: 1.1em;
+}
+
+.quote-main, .author, h2{
+	text-align: center;
+}
+.why-choose-me{
+	padding: 2em;
+}
+
+.about-para{
+	width: 80%;
+	margin: auto;
+	margin-bottom: 2em;
+}
+
+.about-img-grid{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 1em;
+}
+
+#about-sub-img{
+	width: 100%;
+}
+
+.service-text{
+	text-align: center;
+	font-size: 1.2rem;
+	color: #c2a43b;
+	border-bottom: 1px solid #fff;
+}
+
+.service-text:hover{
+	border-bottom: 1px solid #c2a43b;
+}
+
+/*Media Query*/
+@media (max-width: 768px){
+	.aboutMe{
+		display: block;
+	}
+
+	#about-img{
+		width: 80%;
+		display: block;
+		margin:auto;
+	}
+
+	h4, .designation{
+		text-align: center;
+	}
+
+	.text{
+		margin-top: 5em;
+	}
+
+	.about-img-grid{
+		grid-template-columns: repeat(2,1fr);
+	}
+}
+
+@media (max-width: 540px){
+	.quote-main{
+		font-size: 1.3rem;
+	}
+
+	.service-text{
+		font-size: 1rem;
+	}
+}
+
+@media(max-width: 404px){
+	.service-text{
+		font-size: 0.8rem;
+	}
+}
+@media (max-width: 384px){
+	.quote-main{
+		font-size: 1rem;
+	}
+}
